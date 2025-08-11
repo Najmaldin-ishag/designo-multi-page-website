@@ -10,7 +10,7 @@ export const Footer = () => {
   return (
     <>
       <Cta />
-      <footer className="bg-black py-[3.5rem]  relative -mt-[4rem] -z-10">
+      <footer className="bg-black py-[3.5rem]  relative -mt-[2rem] -z-10">
         <nav className="flex items-center justify-between gap-4 container !mt-10 text-white">
           <Link to="/" className="flex items-center justify-center gap-4">
             <img
