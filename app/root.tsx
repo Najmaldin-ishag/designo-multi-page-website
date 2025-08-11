@@ -32,7 +32,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
-        <link rel="icon" href="./assets/favicon-32x32.png" />
+        <link rel="icon" href="/assets/favicon-32x32.png" />
         <Links />
       </head>
       <body>

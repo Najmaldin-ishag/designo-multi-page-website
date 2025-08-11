@@ -10,7 +10,7 @@ export const Footer = () => {
   return (
     <>
       <Cta />
-      <footer className="bg-black py-[3.5rem] z-1 relative">
+      <footer className="bg-black py-[3.5rem]  relative">
         <nav className="flex items-center justify-between gap-4 container  text-white">
           <Link to="/" className="flex items-center justify-center gap-4">
             <img
@@ -29,7 +29,7 @@ export const Footer = () => {
           </div>
         </nav>
 
-        <div className="w-[72%] h-[0.0625rem] bg-dark-gray mx-auto right-0 left-0 absolute top-[50%] bottom-[50%]" />
+        <hr className="w-[72%] h-[0.0625rem] border-dark-gray mx-auto right-0 left-0 absolute top-[50%] bottom-[50%]" />
 
         <div className="grid grid-cols-3 gap-5 container !mt-[8rem] ">
           <div className="text-white text-[1rem] font-[700] leading-[1.625rem] flex flex-col gap-1.5">
