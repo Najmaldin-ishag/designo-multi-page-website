@@ -2,7 +2,7 @@ import { Button } from "./ui/button";
 
 const Cta = () => {
   return (
-    <section className="bg-peach container py-[2.5rem] px-20 rounded-[0.93775rem]  ">
+    <section className="section-cta container py-[2.5rem] px-20 rounded-[0.93775rem] -mt-[50rem] ">
       <div className=" flex items-center justify-between">
         <div>
           <h3 className="text-white text-[2.5rem] leading-[2.5rem] font-[500] mb-[1rem]">
