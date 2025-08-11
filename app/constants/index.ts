@@ -1,7 +1,7 @@
-export const Features = [
+export const FeaturesSection = [
   {
     id: "1",
-    imgPath: "/assets/home/desktop/illustration-passionate.svg",
+    imgPath: "/assets/Passionate-image.png",
     alt: "illustration",
     title: "Passionate",
     description:
@@ -9,7 +9,7 @@ export const Features = [
   },
   {
     id: "1",
-    imgPath: "/assets/home/desktop/illustration-resourceful.svg",
+    imgPath: "/assets/Resourceful-img.png",
     alt: "illustration",
     title: "Resourceful",
     description:
@@ -17,7 +17,7 @@ export const Features = [
   },
   {
     id: "1",
-    imgPath: "/assets/home/desktop/illustration-friendly.svg",
+    imgPath: "/assets/Friendly-img.png",
     alt: "illustration",
     title: "Friendly",
     description:

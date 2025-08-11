@@ -1,6 +1,7 @@
 import Portfolio from "~/Components/Home/Portfolio";
 import type { Route } from "./+types/home";
 import Hero from "~/Components/Home/Hero";
+import Features from "~/Components/Home/Features";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -13,7 +14,8 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Portfolio />;
+      <Portfolio />
+      <Features />
     </>
   );
 }
