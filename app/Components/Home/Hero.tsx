@@ -2,7 +2,7 @@ import { Button } from "../ui/button";
 
 const Hero = () => {
   return (
-    <section className="bg-peach rounded-[0.9375rem] container px-10 !mt-8">
+    <section className="bg-peach rounded-[0.9375rem] container px-10 !mt-12">
       <div className="grid grid-cols-2 items-center justify-center gap-8">
         <div>
           <h1 className="text-white text-5xl leading-12 font-medium mb-6">
@@ -17,16 +17,16 @@ const Hero = () => {
             Learn more
           </Button>
         </div>
-        <div className="relative">
+        <div className="relative flex flex-col">
           <img
-            className="absolute top-2 -right-5 "
+            className="absolute top-3 right-8 left-2  opacity-90 "
             src="/assets/home/desktop/bg-pattern-hero-home.svg"
             alt="image"
           />
           <img
             src="/assets/home/desktop/image-hero-phone.png"
             alt="image"
-            className="z-10"
+            className="z-10 max-w-[25.5rem]  self-end"
           />
         </div>
       </div>
