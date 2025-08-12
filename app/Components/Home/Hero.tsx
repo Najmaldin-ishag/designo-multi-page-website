@@ -5,15 +5,15 @@ const Hero = () => {
     <section className="bg-peach rounded-[0.9375rem] container px-10 !mt-8">
       <div className="grid grid-cols-2 items-center justify-center gap-8">
         <div>
-          <h1 className="text-white text-5xl leading-12 font-medium mb-6">
+          <h1 className="text-white text-5xl leading-12 font-medium mb-8">
             Award-winning custom designs and digital branding solutions
           </h1>
-          <p className="text-white text-base font-normal leading-6  mb-6">
+          <p className="text-white text-base font-normal leading-6  mb-8">
             With over 10 years in the industry, we are experienced in creating
             fully responsive websites, app design, and engaging brand
             experiences. Find out more about our services.
           </p>
-          <Button className="text-white cursor-pointer uppercase text-sm leading-normal font-medium  px-12 py-6 bg-light-peach/90 ">
+          <Button className=" cursor-pointer uppercase text-sm leading-normal font-medium  text-dark-gray px-12 py-6 bg-white ">
             Learn more
           </Button>
         </div>
