@@ -2,7 +2,7 @@ import { Button } from "../ui/button";
 
 const Hero = () => {
   return (
-    <section className="bg-peach rounded-[0.9375rem] container px-10 !mt-12">
+    <section className="bg-peach rounded-[0.9375rem] container px-10 !mt-8">
       <div className="grid grid-cols-2 items-center justify-center gap-8">
         <div>
           <h1 className="text-white text-5xl leading-12 font-medium mb-6">

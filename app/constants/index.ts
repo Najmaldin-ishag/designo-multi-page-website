@@ -8,7 +8,7 @@ export const FeaturesSection = [
       "Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge art, design, and technology into exciting new solutions.",
   },
   {
-    id: "1",
+    id: "2",
     imgPath: "/assets/Resourceful-img.png",
     alt: "illustration",
     title: "Resourceful",
@@ -16,7 +16,7 @@ export const FeaturesSection = [
       "Everything that we do has a strategic purpose. We use an agile approach in all of our projects and value customer collaboration. It guarantees superior results that fulfill our clients’ needs..",
   },
   {
-    id: "1",
+    id: "3",
     imgPath: "/assets/Friendly-img.png",
     alt: "illustration",
     title: "Friendly",

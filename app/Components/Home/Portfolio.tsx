@@ -1,8 +1,8 @@
 const Portfolio = () => {
   return (
-    <div className="min-h-screen !mt-25 p-10">
-      <section className="container  px-10 ">
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 auto-rows-fr max-w-6xl mx-auto">
+    <div className="min-h-screen !mt-25 p-5 ">
+      <section className="  px-10 ">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 auto-rows-fr max-w-[69rem] mx-auto">
           {/* Web Design - Large Left Section spanning 2 columns and 2 rows */}
           <div className="lg:col-span-2 lg:row-span-2 relative group cursor-pointer overflow-hidden rounded-lg  min-h-[320px] lg:min-h-[640px]  ">
             <div className="absolute inset-0 bg-[url(/assets/home/desktop/image-web-design-large.jpg)] bg-cover bg-center transition-transform  duration-300 group-hover:scale-105" />
