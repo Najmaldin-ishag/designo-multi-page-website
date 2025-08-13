@@ -1,6 +1,6 @@
 const Portfolio = () => {
   return (
-    <div className="min-h-screen !mt-25 p-5 ">
+    <div className="min-h-screen !mt-25 p-5  ">
       <section className="  px-10 ">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 auto-rows-fr max-w-[69rem] mx-auto ">
           {/* Web Design - Large Left Section spanning 2 columns and 2 rows */}

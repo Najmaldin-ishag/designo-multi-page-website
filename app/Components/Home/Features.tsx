@@ -1,7 +1,7 @@
 import { FeaturesSection } from "~/constants";
 const Features = () => {
   return (
-    <section className="container !mt-25 !mb-35">
+    <section className="container !mt-25 !mb-[20rem]">
       <div className="grid grid-cols-3 gap-[4.5rem]">
         {FeaturesSection.map(({ id, title, imgPath, description, alt }) => (
           <div key={id} className="text-center">
