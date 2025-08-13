@@ -5,14 +5,18 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { IoLogoPinterest } from "react-icons/io";
 import { TfiYoutube } from "react-icons/tfi";
 import Cta from "./Cta";
+import { Button } from "./ui/button";
 
 export const Footer = () => {
   return (
-    <>
+    <footer className="relative">
       <Cta />
-      <footer className="bg-black py-[3.5rem]  relative -mt-[2rem] -z-10">
-        <nav className="flex items-center justify-between gap-4 container !mt-10 text-white">
-          <Link to="/" className="flex items-center justify-center gap-4">
+      <section className="bg-black py-[3.5rem]  relative -mt-[2rem] ">
+        <nav className="flex items-center justify-between gap-4 container !mt-20 text-white">
+          <Link
+            to="/"
+            className="flex items-center justify-center gap-4 cursor-pointer"
+          >
             <img
               src="../assets/Logo.svg"
               alt="logo"
@@ -54,7 +58,7 @@ export const Footer = () => {
             <TfiYoutube className="text-peach  " size={30} />
           </div>
         </div>
-      </footer>
-    </>
+      </section>
+    </footer>
   );
 };
