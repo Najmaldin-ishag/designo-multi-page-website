@@ -19,6 +19,13 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+  .section-web-design {
+    background-image: url(/assets/bg-image.png);
+    height: full;
+    width: full;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 @theme {
   /* Primary colors */
