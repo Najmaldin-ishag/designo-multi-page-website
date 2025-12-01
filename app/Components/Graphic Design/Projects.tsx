@@ -1,10 +1,10 @@
-import { ProjectShowcase } from "~/constants";
+import { GraphicDesignProjects } from "~/constants";
 
 const Projects = () => {
   return (
     <section className="container !mt-[7rem]">
       <div className="grid grid-cols-3 gap-8 items-center justify-center text-center ">
-        {ProjectShowcase.map(({ id, imgPath, alt, name, description }) => (
+        {GraphicDesignProjects.map(({ id, imgPath, alt, name, description }) => (
           <div key={id} className=" overflow-hidden cursor-pointer rounded-xl ">
             <div>
               <img src={imgPath} alt={alt} className="object-contain w-fit " />
@@ -23,3 +23,4 @@ const Projects = () => {
 };
 
 export default Projects;
+

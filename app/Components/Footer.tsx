@@ -27,9 +27,9 @@ export const Footer = () => {
             </span>
           </Link>
           <div className="flex  gap-[7rem] uppercase text-[0.875rem] leading-[0.125rem] text-gray-dark font-[400] ">
-            <Link to="company">Our Company</Link>
-            <Link to="locations">Locations</Link>
-            <Link to="contact">Contact</Link>
+            <Link to="/company">Our Company</Link>
+            <Link to="/locations">Locations</Link>
+            <Link to="/contact">Contact</Link>
           </div>
         </nav>
 

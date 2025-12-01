@@ -13,9 +13,11 @@ const Hero = () => {
             fully responsive websites, app design, and engaging brand
             experiences. Find out more about our services.
           </p>
-          <Button className=" cursor-pointer uppercase text-sm leading-normal font-medium  text-dark-gray px-12 py-6 bg-white ">
-            Learn more
-          </Button>
+          <a href="/company">
+            <Button className=" cursor-pointer uppercase text-sm leading-normal font-medium  text-dark-gray px-12 py-6 bg-white ">
+              Learn more
+            </Button>
+          </a>
         </div>
         <div className="relative flex flex-col">
           <img

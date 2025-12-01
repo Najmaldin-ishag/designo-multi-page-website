@@ -16,19 +16,54 @@ type Pages = {
   "/web-design": {
     params: {};
   };
+  "/app-design": {
+    params: {};
+  };
+  "/graphic-design": {
+    params: {};
+  };
+  "/company": {
+    params: {};
+  };
+  "/locations": {
+    params: {};
+  };
+  "/contact": {
+    params: {};
+  };
 };
 
 type RouteFiles = {
   "root.tsx": {
     id: "root";
-    page: "/" | "/web-design";
+    page: "/" | "/web-design" | "/app-design" | "/graphic-design" | "/company" | "/locations" | "/contact";
   };
   "routes/home.tsx": {
     id: "routes/home";
     page: "/";
   };
-  "routes/webDesign.tsx": {
-    id: "routes/webDesign";
+  "routes/WebDesign.tsx": {
+    id: "routes/WebDesign";
     page: "/web-design";
+  };
+  "routes/AppDesign.tsx": {
+    id: "routes/AppDesign";
+    page: "/app-design";
+  };
+  "routes/GraphicDesign.tsx": {
+    id: "routes/GraphicDesign";
+    page: "/graphic-design";
+  };
+  "routes/AboutUs.tsx": {
+    id: "routes/AboutUs";
+    page: "/company";
+  };
+  "routes/Locations.tsx": {
+    id: "routes/Locations";
+    page: "/locations";
+  };
+  "routes/Contact.tsx": {
+    id: "routes/Contact";
+    page: "/contact";
   };
 };

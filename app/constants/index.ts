@@ -74,3 +74,64 @@ export const ProjectShowcase = [
       "Get expert training in coding, data, design, and digital marketing",
   },
 ];
+export const AppDesignProjects = [
+  {
+    id: "1",
+    imgPath: "/assets/app-design/desktop/image-airfilter.jpg",
+    alt: "project image",
+    name: "AIRFILTER",
+    description: "Solving the problem of poor indoor air quality by filtering the air",
+  },
+  {
+    id: "2",
+    imgPath: "/assets/app-design/desktop/image-eyecam.jpg",
+    alt: "project image",
+    name: "EYECAM",
+    description: "Product that lets you edit your favorite photos and videos at any time",
+  },
+  {
+    id: "3",
+    imgPath: "/assets/app-design/desktop/image-faceit.jpg",
+    alt: "project image",
+    name: "FACEIT",
+    description: "Get to meet your favorite internet superstar with the faceit app",
+  },
+  {
+    id: "4",
+    imgPath: "/assets/app-design/desktop/image-todo.jpg",
+    alt: "project image",
+    name: "TODO",
+    description: "A todo app that features cloud sync with light and dark mode",
+  },
+  {
+    id: "5",
+    imgPath: "/assets/app-design/desktop/image-loopstudios.jpg",
+    alt: "project image",
+    name: "LOOPSTUDIOS",
+    description: "A VR experience app made for Loopstudios",
+  },
+];
+
+export const GraphicDesignProjects = [
+  {
+    id: "1",
+    imgPath: "/assets/graphic-design/desktop/image-change.jpg",
+    alt: "project image",
+    name: "TIM BROWN",
+    description: "A book cover designed for Tim Brown's new release, 'Change'",
+  },
+  {
+    id: "2",
+    imgPath: "/assets/graphic-design/desktop/image-boxed-water.jpg",
+    alt: "project image",
+    name: "BOXED WATER",
+    description: "A simple packaging concept made for Boxed Water",
+  },
+  {
+    id: "3",
+    imgPath: "/assets/graphic-design/desktop/image-science.jpg",
+    alt: "project image",
+    name: "SCIENCE!",
+    description: "A poster made in collaboration with the Federal Art Project",
+  },
+];
