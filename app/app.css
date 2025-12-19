@@ -10,7 +10,7 @@
 
 @layer utilities {
   .container {
-    @apply mx-auto my-0 max-w-[1100px];
+    @apply mx-auto max-w-[1100px];
   }
   .section-cta {
     background-image: url(/assets/Cta-bg-img.png);
