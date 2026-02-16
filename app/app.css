@@ -26,6 +26,17 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+  .locations-card {
+    background-color: #fdf3f0;
+    background-image: url(/assets/shared/desktop/bg-pattern-two-circles.svg);
+    background-repeat: no-repeat;
+  }
+  .locations-card-pattern-right {
+    background-position: bottom right;
+  }
+  .locations-card-pattern-left {
+    background-position: bottom left;
+  }
 }
 @theme {
   /* Primary colors */
