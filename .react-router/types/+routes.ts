@@ -6,6 +6,7 @@ declare module "react-router" {
   interface Register {
     pages: Pages
     routeFiles: RouteFiles
+    routeModules: RouteModules
   }
 }
 
@@ -66,4 +67,15 @@ type RouteFiles = {
     id: "routes/Contact";
     page: "/contact";
   };
+};
+
+type RouteModules = {
+  "root": typeof import("./app/root.tsx");
+  "routes/home": typeof import("./app/routes/home.tsx");
+  "routes/WebDesign": typeof import("./app/routes/WebDesign.tsx");
+  "routes/AppDesign": typeof import("./app/routes/AppDesign.tsx");
+  "routes/GraphicDesign": typeof import("./app/routes/GraphicDesign.tsx");
+  "routes/AboutUs": typeof import("./app/routes/AboutUs.tsx");
+  "routes/Locations": typeof import("./app/routes/Locations.tsx");
+  "routes/Contact": typeof import("./app/routes/Contact.tsx");
 };

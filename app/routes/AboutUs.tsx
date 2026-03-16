@@ -1,6 +1,7 @@
-import React from "react";
+import AboutContent from "~/Components/AboutContent";
 
 const AboutUs = () => {
+  return <AboutContent />;
   return (
     <div className="relative overflow-hidden">
       {/* Background Leaf 1 - Left side */}

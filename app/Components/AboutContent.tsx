@@ -1,0 +1,170 @@
+import { Link } from "react-router";
+
+const locationCards = [
+  {
+    id: "canada",
+    name: "Canada",
+    image: "/assets/shared/desktop/illustration-canada.svg",
+  },
+  {
+    id: "australia",
+    name: "Australia",
+    image: "/assets/shared/desktop/illustration-australia.svg",
+  },
+  {
+    id: "uk",
+    name: "United Kingdom",
+    image: "/assets/shared/desktop/illustration-united-kingdom.svg",
+  },
+];
+
+const AboutContent = () => {
+  return (
+    <div className="relative overflow-hidden">
+      <div className="absolute top-[320px] left-0 -translate-x-1/2 z-0 hidden xl:block">
+        <img src="/assets/shared/desktop/bg-pattern-leaf.svg" alt="" />
+      </div>
+      <div className="absolute top-[60%] right-0 translate-x-1/2 z-0 hidden xl:block">
+        <img src="/assets/shared/desktop/bg-pattern-leaf.svg" alt="" />
+      </div>
+
+      <section className="container !mt-4 md:!mt-8 px-0 md:px-10 lg:px-0 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 rounded-[0.9375rem] overflow-hidden">
+          <div className="relative h-[20rem] md:h-[20rem] lg:h-auto">
+            <picture>
+              <source media="(min-width: 1024px)" srcSet="/assets/about/desktop/image-about-hero.jpg" />
+              <source media="(min-width: 768px)" srcSet="/assets/about/tablet/image-about-hero.jpg" />
+              <img
+                src="/assets/about/mobile/image-about-hero.jpg"
+                alt="Team collaboration"
+                className="w-full h-full object-cover"
+              />
+            </picture>
+          </div>
+          <div
+            className="bg-peach relative overflow-hidden flex flex-col justify-center items-center lg:items-start text-center lg:text-left px-6 md:px-14 lg:px-24 py-20 md:py-16 lg:py-0"
+            style={{
+              backgroundImage:
+                "url(/assets/about/mobile/bg-pattern-hero-about-mobile.svg), url(/assets/about/desktop/bg-pattern-hero-about-desktop.svg)",
+              backgroundPosition: "right center, left center",
+              backgroundRepeat: "no-repeat, no-repeat",
+              backgroundSize: "contain, cover",
+            }}
+          >
+            <h1 className="text-white text-[2rem] md:text-5xl font-medium leading-[2.25rem] md:leading-[3rem] mb-6">
+              About Us
+            </h1>
+            <p className="text-white text-[0.9375rem] md:text-base font-normal leading-[1.625rem] max-w-[35rem]">
+              Founded in 2010, we are a creative agency that produces lasting
+              results for our clients. We have partnered with many startups,
+              corporations, and nonprofits alike to craft designs that make real
+              impact. We are always looking forward to creating brands, products,
+              and digital experiences that connect with our clients audiences.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="container mt-24 md:mt-32 lg:mt-40 mb-24 md:mb-32 lg:mb-40 px-0 md:px-10 lg:px-0 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 rounded-[0.9375rem] overflow-hidden">
+          <div className="relative h-80 md:h-80 lg:h-auto">
+            <picture>
+              <source media="(min-width: 1024px)" srcSet="/assets/about/desktop/image-world-class-talent.jpg" />
+              <source media="(min-width: 768px)" srcSet="/assets/about/tablet/image-world-class-talent.jpg" />
+              <img
+                src="/assets/about/mobile/image-world-class-talent.jpg"
+                alt="World class talent"
+                className="w-full h-full object-cover"
+              />
+            </picture>
+          </div>
+          <div
+            className="relative overflow-hidden flex flex-col justify-center items-center lg:items-start text-center lg:text-left px-6 md:px-14 lg:px-24 py-20 md:py-16"
+            style={{
+              backgroundColor: "#fdf3f0",
+              backgroundImage: "url(/assets/shared/desktop/bg-pattern-two-circles.svg)",
+              backgroundPosition: "left center",
+              backgroundRepeat: "no-repeat",
+            }}
+          >
+            <h2 className="text-peach text-[2rem] md:text-[2.5rem] font-medium leading-tight mb-6">
+              World-class talent
+            </h2>
+            <p className="text-dark-gray text-[0.9375rem] md:text-base leading-[1.625rem] mb-6 max-w-[33rem]">
+              We are a crew of strategists, problem-solvers, and technologists.
+              Every design is thoughtfully crafted from concept to launch,
+              ensuring success in its given market. We are constantly updating
+              our skills in a myriad of platforms.
+            </p>
+            <p className="text-dark-gray text-[0.9375rem] md:text-base leading-[1.625rem] max-w-[33rem]">
+              Our team is multi-disciplinary and we are not merely interested in
+              form. Content and meaning are just as important. We give great
+              importance to craftsmanship, service, and prompt delivery.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="container mb-24 md:mb-32 lg:mb-40 px-6 md:px-10 lg:px-0 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 text-center">
+          {locationCards.map((card) => (
+            <div key={card.id} className="flex flex-col items-center">
+              <div className="bg-[url('/assets/shared/desktop/bg-pattern-small-circle.svg')] bg-no-repeat bg-center mb-8">
+                <img src={card.image} alt={card.name} />
+              </div>
+              <h3 className="text-dark-gray text-xl font-medium tracking-[5px] mb-8 uppercase">{card.name}</h3>
+              <Link
+                to="/locations"
+                className="bg-peach hover:bg-light-peach text-white text-[15px] font-medium tracking-[1px] uppercase py-4 px-6 rounded-[8px] transition-colors"
+              >
+                See Location
+              </Link>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="container mb-40 px-0 md:px-10 lg:px-0 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 rounded-[0.9375rem] overflow-hidden">
+          <div className="relative h-80 md:h-80 lg:h-auto order-1 lg:order-2">
+            <picture>
+              <source media="(min-width: 1024px)" srcSet="/assets/about/desktop/image-real-deal.jpg" />
+              <source media="(min-width: 768px)" srcSet="/assets/about/tablet/image-real-deal.jpg" />
+              <img
+                src="/assets/about/mobile/image-real-deal.jpg"
+                alt="The real deal"
+                className="w-full h-full object-cover"
+              />
+            </picture>
+          </div>
+          <div
+            className="relative overflow-hidden flex flex-col justify-center items-center lg:items-start text-center lg:text-left px-6 md:px-14 lg:px-24 py-20 md:py-16 order-2 lg:order-1"
+            style={{
+              backgroundColor: "#fdf3f0",
+              backgroundImage: "url(/assets/shared/desktop/bg-pattern-two-circles.svg)",
+              backgroundPosition: "left bottom",
+              backgroundRepeat: "no-repeat",
+            }}
+          >
+            <h2 className="text-peach text-[2rem] md:text-[2.5rem] font-medium leading-tight mb-6">
+              The real deal
+            </h2>
+            <p className="text-dark-gray text-[0.9375rem] md:text-base leading-[1.625rem] mb-6 max-w-[33rem]">
+              As strategic partners in our clients businesses, we are ready to
+              take on any challenge as our own. Solving real problems requires
+              empathy and collaboration, and we strive to bring a fresh
+              perspective to every opportunity.
+            </p>
+            <p className="text-dark-gray text-[0.9375rem] md:text-base leading-[1.625rem] max-w-[33rem]">
+              We are visual storytellers in appealing and captivating ways. By
+              combining business and marketing strategies, we inspire audiences to
+              take action and drive real results.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default AboutContent;

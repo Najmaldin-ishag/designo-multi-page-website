@@ -1,20 +1,28 @@
-import React from "react";
-import Header from "~/Components/Header";
 import Portfolio from "~/Components/Web Design/Portfolio";
 import Projects from "~/Components/Web Design/Projects";
 
 const WebDesign = () => {
   return (
     <>
-      <Header variant="web">
-        <h1 className="justify-start text-white text-5xl font-medium ">
-          Web Design
-        </h1>
-        <p className="text-white text-base font-normal mt-8 text-center leading-relaxed">
-          We build websites that serve as powerful marketing tools <br /> and
-          bring memorable brand experiences.
-        </p>
-      </Header>
+      <section className="container !mt-4 md:!mt-8 px-6 md:px-10 lg:px-0">
+        <div
+          className="bg-peach rounded-[0.9375rem] relative overflow-hidden text-center text-white px-6 py-24 md:px-16 md:py-16 lg:px-[11.875rem]"
+          style={{
+            backgroundImage: "url(/assets/web-design/desktop/bg-pattern-intro-web.svg)",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+          }}
+        >
+          <h1 className="text-[2rem] md:text-5xl font-medium leading-[2.25rem] md:leading-[3rem]">
+            Web Design
+          </h1>
+          <p className="text-[0.9375rem] md:text-base font-normal mt-6 md:mt-8 leading-[1.625rem] max-w-[26rem] mx-auto">
+            We build websites that serve as powerful marketing tools
+            <br className="hidden md:block" /> and bring memorable brand experiences.
+          </p>
+        </div>
+      </section>
       <Projects />
       <Portfolio />
     </>

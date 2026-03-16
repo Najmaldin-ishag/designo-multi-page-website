@@ -8,7 +8,8 @@ const locations = [
     address: ["3886 Wellington Street", "Toronto, Ontario M9C 3J5"],
     phone: "+1 253-863-8967",
     email: "contact@designo.co",
-    map: "/assets/locations/desktop/image-map-canada.png",
+    mapDesktop: "/assets/locations/desktop/image-map-canada.png",
+    mapTablet: "/assets/locations/tablet/image-map-canada.png",
   },
   {
     id: "2",
@@ -17,7 +18,8 @@ const locations = [
     address: ["19 Balonne Street", "New South Wales 2443"],
     phone: "(02) 6720 9092",
     email: "contact@designo.au",
-    map: "/assets/locations/desktop/image-map-australia.png",
+    mapDesktop: "/assets/locations/desktop/image-map-australia.png",
+    mapTablet: "/assets/locations/tablet/image-map-australia.png",
   },
   {
     id: "3",
@@ -26,37 +28,40 @@ const locations = [
     address: ["13 Colorado Way", "Rhyd-y-fro SA8 9GA"],
     phone: "078 3115 1400",
     email: "contact@designo.uk",
-    map: "/assets/locations/desktop/image-map-united-kingdom.png",
+    mapDesktop: "/assets/locations/desktop/image-map-united-kingdom.png",
+    mapTablet: "/assets/locations/tablet/image-map-uk.png",
   },
 ];
 
 const Locations = () => {
   return (
-    <div className="container !mt-8 mb-40">
+    <div className="container !mt-4 md:!mt-8 mb-40 px-0 md:px-10 lg:px-0">
       {locations.map((location, index) => {
         const isReversed = index % 2 === 1;
         const desktopGridClass = isReversed
           ? "lg:grid-cols-[350px_minmax(0,1fr)]"
           : "lg:grid-cols-[minmax(0,1fr)_350px]";
+        const patternClass = isReversed
+          ? "lg:locations-card-pattern-right locations-card-pattern-left"
+          : "locations-card-pattern-left";
 
         return (
           <div
             key={location.id}
-            className={`grid grid-cols-1 ${desktopGridClass} gap-0 lg:gap-[30px] items-stretch ${
-              index < locations.length - 1 ? "mb-8 lg:mb-8" : ""
+            className={`grid grid-cols-1 ${desktopGridClass} gap-0 md:gap-8 lg:gap-[30px] items-stretch ${
+              index < locations.length - 1 ? "mb-10 md:mb-8" : ""
             }`}
           >
-            {/* Info Card - light peachy-pink, rounded, subtle circle pattern */}
             <div
-              className={`locations-card locations-card-pattern-left ${
+              className={`locations-card ${patternClass} ${
                 isReversed ? "lg:order-2" : "lg:order-1"
-              } order-2 relative overflow-hidden rounded-[0.9375rem] flex flex-col justify-center px-10 py-12 sm:py-16 lg:px-[95px] lg:py-[88px] min-h-[320px]`}
+              } order-2 relative overflow-hidden rounded-none md:rounded-[0.9375rem] flex flex-col justify-center px-6 md:px-14 lg:px-[95px] py-20 md:py-[5.5rem] min-h-[24.375rem] md:min-h-[20.375rem]`}
             >
-              <h2 className="text-peach text-[2rem] lg:text-[2.5rem] font-medium leading-tight mb-6 lg:mb-8 relative z-10">
+              <h2 className="text-peach text-[2rem] md:text-[2.5rem] font-medium leading-tight mb-6 md:mb-8 relative z-10 text-center md:text-left">
                 {location.country}
               </h2>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-8 lg:gap-x-[30px] relative z-10">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-8 lg:gap-x-[30px] relative z-10 text-center md:text-left">
                 <div>
                   <p className="text-dark-gray text-[15px] font-bold leading-[25px] mb-2">
                     {location.office}
@@ -91,13 +96,16 @@ const Locations = () => {
             <div
               className={`${
                 isReversed ? "lg:order-1" : "lg:order-2"
-              } order-1 rounded-[0.9375rem] overflow-hidden h-[320px] lg:h-[326px]`}
+              } order-1 rounded-none md:rounded-[0.9375rem] overflow-hidden h-80 md:h-[20.375rem]`}
             >
-              <img
-                src={location.map}
-                alt={`${location.country} office location map`}
-                className="w-full h-full object-cover"
-              />
+              <picture>
+                <source media="(min-width: 1024px)" srcSet={location.mapDesktop} />
+                <img
+                  src={location.mapTablet}
+                  alt={`${location.country} office location map`}
+                  className="w-full h-full object-cover"
+                />
+              </picture>
             </div>
           </div>
         );
